@@ -1,0 +1,70 @@
+﻿
+        .icon {
+            max-width: 150px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        /*a {
+            padding: 5px;
+        }*/
+
+        .ReelContent{
+            margin-left:10%;
+            margin-right:10%;
+        }
+
+        .error{
+    color:red;
+    width:45%;
+    text-align:center;
+    margin-top: -2px;
+    margin-bottom: 10px;
+}
+
+
+
+
+        body {
+            background-image: url('Images/bgFinal.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        .services section {
+            text-align: center;
+        }
+
+        #row2 {
+            margin-top: 40px;
+        }
+
+        
+.blog-author-pic {
+	width: 270px;
+	float: left;
+	margin: 10px 10px;
+}
+
+#jumbotron {
+    width: inherit;
+    
+}
+.jumbotron {
+    background-color:black !important; 
+    color: white;
+}
+.container .jumbotron {
+    border-radius: 40px;
+}

@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        .icon {
+            max-width: 150px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        a {
+            padding: 5px;
+        }
+
+
+        body {
+            background-image: url("Images/bgFinal.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        .services section {
+            text-align: center;
+        }
+
+        #row2 {
+            margin-top: 40px;
+        }
+    </style>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="bootstrap.min.css" />-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="Styles.css" />
+    <link rel="stylesheet" href="ModalStyles.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Validation.js"></script>
+    <script language="JavaScript" type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <title>Blog</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="Home.html" class="navbar-brand">Audition Reel</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+
+
+
+                <ul class="nav navbar-nav">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="NewsFeed.html">Profile</a></li>
+                    <li class="active"><a href="#">Blog</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="#Fanscript" data-toggle="modal" data-target="#sum">Fanscript</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="Signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a data-toggle="modal" data-target="#myModal" href="#login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="sum" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">FANSCRIPT</h4>
+                </div>
+                <form name="fanscript" class="form-group">
+                    <div class="modal-body">
+
+                        <label for="question">Describe your idea</label>
+                        <textarea class="form-control" name="idea" placeholder="Describe your idea" rows="5" id="summary"></textarea>
+                        <br />
+                        <label for="question">Name</label>
+                        <input class="form-control" name="name" placeholder="Name" type="text">
+                        <br />
+                        <label for="question">Contact No.</label>
+                        <input class="form-control" name="contact" placeholder="Contact No." type="text">
+                        <br />
+                        <label for="question">Email</label>
+                        <input class="form-control" name="email" placeholder="Email" type="text">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Login / Sign Up</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="omb_login">
+                        <h3 class="omb_authTitle">Login or <a href="#">Sign up</a></h3>
+                        <div class="row omb_row-sm-offset-3 omb_socialButtons">
+                            <div class="col-xs-4 col-sm-2">
+                                <a href="#" class="btn btn-lg btn-block omb_btn-facebook">
+                                    <i class="fa fa-facebook visible-xs"></i>
+                                    <span class="hidden-xs"><i style="font-size:40px" class="fa">&#xf082;</i></span>
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <a href="#" class="btn btn-lg btn-block omb_btn-twitter">
+                                    <i class="fa fa-twitter visible-xs"></i>
+                                    <span class="hidden-xs"><i style="font-size:40px" class="fa">&#xf099;</i></span>
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <a href="#" class="btn btn-lg btn-block omb_btn-google">
+                                    <i class="fa fa-google-plus visible-xs"></i>
+                                    <span class="hidden-xs"><i style="font-size:40px" class="fa">&#xf0d4;</i></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row omb_row-sm-offset-3 omb_loginOr">
+                            <div class="col-xs-12 col-sm-6">
+                                <hr class="omb_hrOr">
+                                <span class="omb_spanOr">or</span>
+                            </div>
+                        </div>
+
+                        <div class="row omb_row-sm-offset-3">
+                            <div class="col-xs-12 col-sm-6">
+                                <form class="omb_loginForm" action="basicprofile.html" autocomplete="off" >
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <input type="text" class="form-control" name="username" placeholder="email address">
+                                    </div>
+                                    <span class="help-block"></span>
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                        <input type="password" class="form-control" name="password" placeholder="Password">
+                                    </div>
+                                    
+
+                                    <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row omb_row-sm-offset-3">
+                            <div class="col-xs-12 col-sm-3">
+                                <label class="checkbox">
+                                    <input type="checkbox" value="remember-me">Remember Me
+                                </label>
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <p class="omb_forgotPwd">
+                                    <a href="#">Forgot password?</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <br />
+    <br />
+    <br />
+    <div class="container">
+        <div class="container-fluid ReelContent">
+            <blockquote>
+                <h2>5 Questions in 5 Minutes with Casting Director Kirsty McGregor</h2>
+                <footer>by Alixandra Kupcik | Nov 16, 2016 | 5 Questions, AU</footer>
+            </blockquote>
+
+            <img class="img-responsive blog-author-pic" src="Images/image4.jpg">
+            <p class="text-justify">Success in any industry is challenging yet when your chosen vocation consists of an enterprise built entirely on the lucrative world of entertainment, ones obstacles exist in another stratosphere. Throw in the scarcity of Australian show business and you have yourself an audacious professional recipe.</p>
+
+            <p class="text-justify">Casting director Kirsty McGregor is the crème de le crème of the Australian film and television industry. Originally an actress, in 2001 her passion for talent ignited the birth of McGregor Casting in her modest one bedroom flat in Sydney’s Woolloomooloo. One year later Kirsty’s strong work ethic was reaping the awards and she opened her office in the Sydney suburb of Stanmore. Fast forward 14 years, 68 TV and Film credits, a Primetime Emmy Award nomination, a Casting Guild Australia (CGA) Award winner and two time nominee for the Casting Society of America Awards, Kirsty now runs her business from a deluxe warehouse space in the chic suburb of Redfern – home to McGregor Casting since 2011.</p>
+
+            <p class="text-justify">With the grander space came the larger projects and Kirsty has been appointed local casting director for Thor:Ragnarok currently filming in Queensland, Australia and Mary Magdalene directed by Garth Davis starring Joaquin Phoenix. McGregor first worked with Davis as lead casting director on his first feature film Lion. Starring Nicole Kidman the film received glowing reviews at its premiere at the Toronto International Film Festival on September 10, 2016 and is due for a USA release on November 25, 2016.</p>
+
+
+
+            <hr>
+
+
+
+            <blockquote>
+                <h2>John O’Hare Studios – ‘Acting From the Heart’ Acting and Emotions</h2>
+                <footer>by John O'Hare | Nov 9, 2016 | AU, John O'Hare Studios</footer>
+            </blockquote>
+
+            <img class="img-responsive blog-author-pic" src="Images/image1.jpg">
+
+            <p class="text-justify">During our Shakespeare Intensive workshop last weekend the actress playing Beatrice from ‘Much Ado’ broke down halfway through her ‘Kill Claudio’ scene.</p>
+
+            <p class="text-justify">She declared: “I should be crying here shouldn’t I? Beatrice would be crying now!”</p>
+
+            <p class="text-justify">I replied: “No, I’m not interested in what you feel right now, I want to engage emotionally with the drama of the story. The stakes of the play will be reduced if you ask me to become involved with your (character’s) personal crisis in a naturalistic sense.”</p>
+
+            <p class="text-justify">And herein lies the dilemma for the actor whose personal quest is emotional truth whilst the director, (the audience of one) is trying to balance moment to moment truth with the integrity of the drama as a whole. The actor today faces the dilemma of how far they can go with ‘acting from the heart’ without losing their head.</p>
+
+            <p class="text-justify">
+                As my old acting teacher Lisle Jones told me, “what an actor needs onstage is a cool head and a warm heart.”
+                Do you remember the often quoted anecdote about Dustin Hoffman?
+                Hoffman decided to stay awake for 36 hours to feel just like his character Babe Levy. According to the script of Marathon Man he had not seen a bed for three days. When Hoffman’s co-star, Sir Laurence Olivier heard this, he remarked wryly: “Have you not slept? Oh, dear boy, why don’t you just act!”
+            </p>
+
+            <hr>
+
+            <div class="row" style="background-color:#222222;margin-left:5px;margin-right:5px">
+                -->
+                <!--<ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>-->
+                <p style="float:left;color:white;padding:5px">
+
+                    <a href="#">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                    </a>
+                    :abc@xyz.com
+                </p>
+
+                <p style="float:left;color:white;padding:5px">
+
+                    <a href="#">
+                        <span class="glyphicon glyphicon-earphone"></span>
+                    </a>
+                    :8234567890
+                </p>
+                <ul style="list-style-type:none;display:inline-flex;margin:auto;float:right;padding:5px">
+                    <li><a href="#"><i class="fa fa-pinterest-square" style="font-size:48px;color:white"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter-square" style="font-size:48px;color:white"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook-square" style="font-size:48px;color:white"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus-square" style="font-size:48px;color:white"></i></a></li>
+                </ul>
+
+                <br />
+                <br />
+                <footer style="text-align:center;color:white;clear:both">&copy; 2016 Audition Reel. All rights reserved.</footer>
+            </div>
+            <br />
+            </div>
+        </div>
+
+   
+</body>
+</html>

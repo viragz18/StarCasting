@@ -1,0 +1,457 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--<style>
+        .icon {
+            max-width: 150px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        h4{
+            text-align:center;
+        }
+
+        p{
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        a{
+            padding:5px;
+        }
+
+        
+        body{
+            background-image: url("Images/bgFinal.jpg"); 
+            background-position:center center;
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        .services section {
+            text-align: center;
+        }
+
+        #row2 {
+            margin-top: 40px;
+        }
+
+
+    </style>-->
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="bootstrap.min.css" />-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="Styles.css" />
+    <link rel="stylesheet" href="ModalStyles.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Validation.js"></script>
+    <script language="JavaScript" type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <title>Home</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">Audition Reel</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+
+                
+
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="NewsFeed.html">Profile</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="#Fanscript" data-toggle="modal" data-target="#sum">Fanscript</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">        
+                    <li><a href="Signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a data-toggle="modal" data-target="#myModal" href="#login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                   
+                    <!-- Modal -->                 
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div id="sum" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">FANSCRIPT</h4>
+                </div>
+                <form name="fanscript" class="form-group">
+                    <div class="modal-body">
+
+                        <label for="question">Describe your idea</label>
+                        <textarea class="form-control" name="idea" placeholder="Describe your idea" rows="5" id="summary"></textarea>
+                        <br />
+                        <label for="question">Name</label>
+                        <input class="form-control" name="name" placeholder="Name" type="text">
+                        <br />
+                        <label for="question">Contact No.</label>
+                        <input class="form-control" name="contact" placeholder="Contact No." type="text">
+                        <br />
+                        <label for="question">Email</label>
+                        <input class="form-control" name="email" placeholder="Email" type="text">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Login / Sign Up</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="omb_login">
+                        <h3 class="omb_authTitle">Login or <a href="#">Sign up</a></h3>
+                        <div class="row omb_row-sm-offset-3 omb_socialButtons">
+                            <div class="col-xs-4 col-sm-2">
+                                <a href="#" class="btn btn-lg btn-block omb_btn-facebook">
+                                    <i class="fa fa-facebook visible-xs"></i>
+                                    <span class="hidden-xs"><i style="font-size:40px" class="fa">&#xf082;</i></span>
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <a href="#" class="btn btn-lg btn-block omb_btn-twitter">
+                                    <i class="fa fa-twitter visible-xs"></i>
+                                    <span class="hidden-xs"><i style="font-size:40px" class="fa">&#xf099;</i></span>
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <a href="#" class="btn btn-lg btn-block omb_btn-google">
+                                    <i class="fa fa-google-plus visible-xs"></i>
+                                    <span class="hidden-xs"><i style="font-size:40px" class="fa">&#xf0d4;</i></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row omb_row-sm-offset-3 omb_loginOr">
+                            <div class="col-xs-12 col-sm-6">
+                                <hr class="omb_hrOr">
+                                <span class="omb_spanOr">or</span>
+                            </div>
+                        </div>
+
+                        <div class="row omb_row-sm-offset-3">
+                            <div class="col-xs-12 col-sm-6">
+                                <form class="omb_loginForm" action="basicprofile.html" autocomplete="off" >
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <input type="text" class="form-control" name="username" placeholder="email address">
+                                    </div>
+                                    <span class="help-block"></span>
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                        <input type="password" class="form-control" name="password" placeholder="Password">
+                                    </div>
+                                    
+
+                                    <button class="btn btn-lg btn-primary btn-block" onclick="location.href = 'View/NewsFeed.html'" type="submit">Login</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row omb_row-sm-offset-3">
+                            <div class="col-xs-12 col-sm-3">
+                                <label class="checkbox">
+                                    <input type="checkbox" value="remember-me">Remember Me
+                                </label>
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <p class="omb_forgotPwd">
+                                    <a href="#">Forgot password?</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <div class="container">
+        <div class="ReelContent">
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="Images/actor.jpg" alt="Image1">
+                        </div>
+
+                        <div class="item">
+                            <img src="Images/singer2.jpg" alt="Image2">
+                        </div>
+
+                        <div class="item">
+                            <img src="Images/writer1.jpg" alt="Image3">
+                        </div>
+
+                        <div class="item">
+                            <img src="Images/director1.jpg" alt="Image4">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="row2">
+            <section class="col-lg-6">
+
+                <h2>News</h2>
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-12 col-md-8 col-lg-4">
+                    <img class="icon" src="images/n1.jpg" alt="Icon">
+                    <h3>The CW’s DC Superheroes Unite</h3>
+                    <p>
+                        So far this season, the CW line-up of DC superhero shows has kept its episodes action-packed.
+                        The Flash had to deal with an entire alternate timeline, the lasting effects of which weren’t just felt in
+                        Central City.
+                    </p>
+                </section>
+
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-12 col-md-8 col-lg-4">
+                    <img class="icon" src="images/n3.jpg" alt="Icon">
+                    <h3>Beauty and the Beast</h3>
+                    <p>
+                        Beauty and the Beast is an upcoming American romantic fantasy musical film directed by Bill Condon,
+                        produced by David Hoberman and Todd Lieberman, and written by Stephen Chbosky and Evan Spiliotopoulos.
+                        The film is a live-action remake of the 1991 animated film of the same name.
+                    </p>
+                </section>
+
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-12 col-md-8 col-lg-4">
+                    <img class="icon" src="images/n2.jpg" alt="Icon">
+                    <h3>Star Wars: The Force Awakens</h3>
+                    <p>
+                        Star Wars: The Force Awakens (also known as Star Wars: Episode VII – The Force Awakens) is a 2015 American
+                        space opera epic film directed, co-produced and co-written by J. J. Abrams. The first installment of the Star Wars
+                        sequel trilogy.
+                    </p>
+                </section>
+            </section>
+
+
+
+            <section class="col-lg-6">
+                <h2>Events</h2>
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-12 col-md-8 col-lg-4">
+                    <img class="icon" src="images/e7.jpg" alt="Icon">
+                    <h3>Code Girl Movie Screening</h3>
+                    <p>
+                        DATE AND TIME
+                        Mon, December 5, 2016
+                        6:00 PM – 9:00 PM EST
+                    </p>
+                </section>
+
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-12 col-md-8 col-lg-4">
+                    <img class="icon" src="images/e8.jpg" alt="Icon">
+                    <h3>Ghostbusters Movie Screening</h3>
+                    <p>
+                        DATE AND TIME
+                        Sat, November 12, 2016
+                        2:00 PM – 4:00 PM EST
+                    </p>
+                </section>
+
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-12 col-md-8 col-lg-4">
+                    <img class="icon" src="images/e9.jpg" alt="Icon">
+                    <h3>The Legend of Tarzan Movie Screening</h3>
+                    <p>
+                        DATE AND TIME
+                        Sat, November 19, 2016
+                        2:00 PM – 4:00 PM EST
+                    </p>
+                </section>
+            </section>
+        </div>
+
+
+        <div class="row" id="row3">
+            <h2>Upcoming Movies</h2>
+            <!-- <p>The .thumbnail class can be used to display an image gallery. Click on the images to see it in full size:</p>-->
+
+            <div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+                <a href="Images/m1.jpg" class="thumbnail">
+                    <p>Wonder Women</p>
+                    <img src="Images/m1.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+                </a>
+            </div>
+            <div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+                <a href="Images/m2.jpg" class="thumbnail">
+                    <p>Underworld</p>
+                    <img src="Images/m2.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+                </a>
+            </div>
+            <div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+                <a href="Images/m3.jpg" class="thumbnail">
+                    <p>Resident Evil</p>
+                    <img src="Images/m3.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+                </a>
+            </div>
+            <div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+                <a href="Images/m4.png" class="thumbnail">
+                    <p>Justice League</p>
+                    <img src="Images/m4.png" alt="Pulpit Rock" style="width:150px;height:150px">
+                </a>
+            </div>
+            <div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+                <a href="Images/m5.jpg" class="thumbnail">
+                    <p>Beauty and the Beast</p>
+                    <img src="Images/m5.jpg" alt="Moustiers Sainte Marie" style="width:150px;height:150px">
+                </a>
+            </div>
+            <div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+                <a href="Images/m6.jpeg" class="thumbnail">
+                    <p>The Cinque Terre</p>
+                    <img src="Images/m6.jpeg" alt="Cinque Terre" style="width:150px;height:150px">
+                </a>
+            </div>
+        </div>
+
+        <div class="row" id="row4">
+            <h2>Testimonials</h2>
+            <br />
+            <section class="col-lg-5">
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-12 col-md-12 col-lg-12">
+                    <img class="icon" style="border-radius:50px" src="images/t2.jpg" alt="Icon">
+                    <h4>ALEXANDRA DADDARIO</h4>
+                    <p>
+                        "Tony has an infectious enthusiasm and kindness that creates such a supportive environment to work in.
+                        I saw myself and others transform and become braver in just a couple of weeks. He not only teaches acting
+                        but also how to approach and survive this crazy world and crazy business we have chosen to be in...
+                        I'm happy I met him and am so excited to continue working with him."
+                    </p>
+                </section>
+            </section>
+
+            <section class="col-lg-2"></section>
+
+            <section class="col-lg-5">
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-12 col-md-12 col-lg-12">
+                    <img class="icon" style="border-radius:50px" src="images/t5.jpg" alt="Icon">
+                    <h4>DANIEL CUDMORE</h4>
+                    <p>
+                        "Tony's class's have been great for me to simplify my acting, focusing on listening and reacting truthfully.
+                        the teachers create a great environment to learn, take chances and grow all the while devoid of judgment."
+                    </p>
+                </section>
+
+
+            </section>
+        </div>
+
+        <br />
+
+        <div class="row" style="background-color:#222222">
+            <!--<ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>-->
+            <p style="float:left;color:white;padding:5px">
+
+                <a href="#">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                </a>
+                :abc@xyz.com
+            </p>
+
+            <p style="float:left;color:white;padding:5px">
+
+                <a href="#">
+                    <span class="glyphicon glyphicon-earphone"></span>
+                </a>
+                :8234567890
+            </p>
+            <ul style="list-style-type:none;display:inline-flex;margin:auto;float:right;padding:5px">
+                <li><a href="#"><i class="fa fa-pinterest-square" style="font-size:48px;color:white"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter-square" style="font-size:48px;color:white"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-square" style="font-size:48px;color:white"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus-square" style="font-size:48px;color:white"></i></a></li>
+            </ul>
+
+            <br />
+            <br />
+            <footer style="text-align:center;color:white;clear:both">&copy; 2016 Audition Reel. All rights reserved.</footer>
+        </div>
+        <br />
+
+
+    </div>      
+    </div>
+
+</body>
+</html>

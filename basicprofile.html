@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>News Feed</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="bootstrap.min.css" />-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="CustomStyles.css" />
+    <link rel="stylesheet" href="Profile.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Validation.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Search.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Profile.js"></script>
+    <script language="JavaScript" type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <title>xyz's Profile</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="Home.html" class="navbar-brand">Audition Reel</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+
+
+
+                <ul class="nav navbar-nav">
+                    <li><a href="Home.html">Home</a></li>
+                    <li class="active"><a href="#">Profile</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="#">Fanscript</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span>Hello xyz</a></li>-->
+                    <!-- <li><a href="Profile.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>    Hello! xyz <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Settings.html">Settings</a></li>
+                            <li class="divider"></li>
+                     
+                            <li><a href="Notification.html">Notifications</a></li>
+                            <li class="divider"></li>
+                            <li><a href="Home.html">Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br />
+    <br />
+    <br />
+
+
+    <div class="container">
+        <div id="blog" class="row">
+
+            <div class="col-sm-2 paddingTop20">
+                <nav class="nav-sidebar">
+                    <ul class="nav">
+
+                        <li class="active" role="presentation"><a href="#"><span class="glyphicon glyphicon-star"></span>Basic Profile</a></li>
+                        <li role="presentation"><a href="PostNotice.html">Post Notice</a></li>
+                        <li role="presentation"><a href="SearchTalent.html">Search Talent</a></li>
+                        <li role="presentation"><a href="ReviewIdea.html">Review Idea</a></li>
+                        <!--<li role="presentation"><a href="SavedPosts.html">Saved Posts</a></li>
+                        <li role="presentation"><a href="Resources.html">Resources</a></li>-->
+                        <li class="nav-divider"></li>
+                        <!-- <li><a href="javascript:;"><i class="glyphicon glyphicon-off"></i> Sign in</a></li>-->
+                    </ul>
+                </nav>
+                <div><h2 class="add">Place for your add!</h2></div>
+            </div>
+
+            <div id="contact" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Connect</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="question">Message to Artist</label>
+                                <textarea class="form-control" placeholder="Describe your idea" rows="5" id="summary"></textarea>
+
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-10 blogShort">
+                <div class="container-fluid">
+                    <div class="row content">
+                        <!--<div class="col-sm-2 sidenav">
+                <p><a href="basicprofile.html">Basic Profile</a></p>
+                <p><a href="#">Post Notice</a></p>
+                <p><a href="#">Search Talent</a></p>
+            </div>-->
+                        <div class="profile-head">
+                            <div class="col-md- col-sm-4 col-xs-12">
+                                <img src="http://www.newlifefamilychiropractic.net/wp-content/uploads/2014/07/300x300.gif" class="img-responsive" />
+                                <h6>Akshay Gurao</h6>
+                            </div><!--col-md-4 col-sm-4 col-xs-12 close-->
+
+
+                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                <h5>Akshay Gurao</h5>
+                                <p>Actor / Dancer </p>
+                                <ul>
+                                    <li><span class="glyphicon glyphicon-briefcase"></span> 1 years</li>
+                                    <li><span class="glyphicon glyphicon-map-marker"></span> U.S.A.</li>
+                                    <li><span class="glyphicon glyphicon-home"></span> 39, Boylston Street, Boston, MA, U.S.A.</li>
+                                    <li><span class="glyphicon glyphicon-phone"></span> <a href="#" title="call">(+1) 617 6023348</a></li>
+                                    <li><span class="glyphicon glyphicon-envelope"></span><a href="#" title="mail">gurao.a@husky.neu.edu</a></li>
+
+                                </ul>
+
+
+                            </div><!--col-md-8 col-sm-8 col-xs-12 close-->
+
+
+
+
+                        </div><!--profile-head close-->
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-12 gap10"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row" style="background-color:#222222;margin-left:5px;margin-right:5px">
+        -->
+        <!--<ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>-->
+        <p style="float:left;color:white;padding:5px">
+
+            <a href="#">
+                <span class="glyphicon glyphicon-envelope"></span>
+            </a>
+            :abc@xyz.com
+        </p>
+
+        <p style="float:left;color:white;padding:5px">
+
+            <a href="#">
+                <span class="glyphicon glyphicon-earphone"></span>
+            </a>
+            :8234567890
+        </p>
+        <ul style="list-style-type:none;display:inline-flex;margin:auto;float:right;padding:5px">
+            <li><a href="#"><i class="fa fa-pinterest-square" style="font-size:48px;color:white"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter-square" style="font-size:48px;color:white"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook-square" style="font-size:48px;color:white"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus-square" style="font-size:48px;color:white"></i></a></li>
+        </ul>
+
+        <br />
+        <br />
+        <footer style="text-align:center;color:white;clear:both">&copy; 2016 Audition Reel. All rights reserved.</footer>
+    </div>
+    <br />
+</body>
+</html>
